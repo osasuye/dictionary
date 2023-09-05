@@ -1,0 +1,170 @@
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+}
+
+
+
+
+*:not(i){
+    font-family: "Poppins";
+}
+
+body{
+    background-color: #00bfff;
+ 
+    
+
+}
+
+.container {
+    background-color:#ffffff ;
+    width:90vmin;
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    padding: 80px 20px;
+    box-shadow: 0 20px 40px rgba(38,33,61, 0.2);
+    border-radius: 30px;
+    height: 70%;
+   
+    
+}
+
+.heading{
+    text-align: center;
+    background: white;
+    color: #1f194c;
+}
+
+
+
+
+.search-box{
+    width: 100%;
+    display:flex;
+    justify-content: center;
+    /* gap: 115px; */
+}
+.search-box input{
+    padding:5px;
+    width: 65%; 
+    outline: none;
+    border:none;
+    border-bottom: 2px solid #00bfff;
+    font-size: 18px;
+
+
+}
+
+.search-box button{
+    width:20%;
+    padding:10px 0 ;
+
+    border:none; 
+    background-color: #00bfff;
+    border-radius: 8px;
+    outline: none;
+    color:white;
+    
+}
+
+.search-box button:active{
+    background-color: #1f194c;
+}
+
+.result {
+    position: relative;
+    max-height: 100%;
+    overflow-y:scroll ;  
+    padding:30px;
+
+}
+
+.result::-webkit-scrollbar{
+    width:10px;
+    margin-right: 30px;
+    
+}
+
+.result::-webkit-scrollbar-thumb{
+    background: #00bfff;
+    border-radius:40px;
+
+}
+
+.result::-webkit-scrollbar-track{
+
+    background-color: #aeebff;
+    border-radius:40px;
+
+}
+
+
+
+
+
+
+.result h3 {
+
+    font-size: 30px;
+    color:#1f194c;
+}
+
+.result .word{
+    display: flex;
+    /* justify-content: space-between; */
+    gap: 30px; ;
+    margin-top: 30px;
+   
+
+}
+
+
+.result button{
+    background-color:transparent;
+    border: none;
+    outline: none;
+    font-size: 18px;
+    color: #00bfff;
+}
+
+.result .detail {
+
+    display:flex;
+    gap: 10px;
+    color: #b3b6dd;
+}
+
+.word-meaning{
+
+    color:#575a7b;
+}
+
+.word-meaning::first-line{
+    /* color:#343541; */
+    font-weight:450;
+    
+}
+
+.word-meaning::first-letter{
+}
+
+
+.word-example{
+    color:#575a7b; 
+    font-style: italic;
+    border-left: 5px solid #00bfff;
+
+    padding-left: 20px;
+    margin-top: 30px;
+}
+
+.error{
+
+    margin-top: 30px;
+    text-align: center;
+}
+
